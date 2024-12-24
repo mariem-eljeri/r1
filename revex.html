@@ -1,0 +1,62 @@
+<html>
+<head>
+<script src="fonctions1.js">
+</script>
+</head>
+<body>
+<fieldset >	
+    <h1>Abonnement</h1>
+    <Form name="F"  >
+ 		    <table>
+		         <tr>
+				      <td><b>Type ID:</b></td>
+					  <td><input name="TID"  type="radio"  value="cin"><b>CIN</b></td>
+		              <td><input name="TID"  type="radio"  value="pass"><b>Passeport</b></td>
+				 </tr>
+				 <tr>
+				      <td align="right"><b>N°ID:</b></td> 
+					  <td><input name="NID" type="text"></td>
+				 </tr>
+			</table>
+				<fieldset><legend>offre Adsl</legend>
+		   <table>
+				<tr>
+					<td><input name="abo"  type="radio"  value="T4"><b>abonnement ADSL 4MB/S</b></td>
+				</tr>
+				<tr>
+					<td><input name="abo"  type="radio"  value="T8"><b>abonnement ADSL 8MB/S</b></td>
+				</tr>
+				<tr>
+					<td><input name="abo"  type="radio"  value="T24"><b>abonnement ADSL 24MB/S</b></td>
+				</tr>
+				<tr>
+					<td><br><input type="checkbox" name="tv">
+					power TV</td>
+					<td><br><input type="checkbox" name="tel">
+					Zen télephone</td>
+			    </tr>
+			</table></fieldset>
+			<table>
+			<tr><td>Durée:</td><td>
+				<select name="duree" >
+					<option value="dur">choisir la duree
+					<option value="3">3 mois
+					<option value="6">6 mois
+					<option value="12">12 mois
+					<option value="24">24 mois
+				</select></td></tr>					
+				<tr>
+				      <td><br><br><br><br><br><b>Net à payer:</b></td> 
+					  <td><br><br><br><br><br><input name="net" type="text">TND</td>
+				</tr>
+					<br><br>				 
+				<tr>
+				
+					 <td ><br><br><input type="button" value="calculer" onclick="calcul();"></td>	
+                     <td align="center"><br><br><input type="reset" value="Annuler"></td>
+			    </tr>
+			</table>
+			</fieldset>   
+		</form>
+	</body>
+</html>
